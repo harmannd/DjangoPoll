@@ -5,6 +5,10 @@ Virtual Environment Setup
    -pyvenv venv
    -source venv/bin/activate
    -sudo pip3 install -r requirements.txt
-   
+
 Run server
    -sudo python3 manage.py runserver 0:5000
+
+Protection against:
+    - Cross site request forgery
+        - {% csrf_token %} in forms directed at internal URLs
