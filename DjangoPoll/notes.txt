@@ -1,0 +1,10 @@
+Virtual Environment Setup
+   -sudo apt-get install -y python3-pip
+   -sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+   -sudo apt-get install -y python3-venv
+   -pyvenv venv
+   -source venv/bin/activate
+   -sudo pip3 install -r requirements.txt
+   
+Run server
+   -sudo python3 manage.py runserver 0:5000
